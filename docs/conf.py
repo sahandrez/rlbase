@@ -20,7 +20,7 @@
 import os
 import sys
 
-# Make sure spinup is accessible without going through setup.py
+# Make sure rlbase is accessible without going through setup.py
 dirname = os.path.dirname
 sys.path.insert(0, dirname(dirname(__file__)))
 
@@ -45,7 +45,7 @@ MOCK_MODULES = ['mpi4py',
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 # Finish imports
-import spinup
+import rlbase
 from recommonmark.parser import CommonMarkParser
 
 

@@ -14,5 +14,5 @@ before_install:
 script:
     - pip3 install --upgrade -e .[mujoco]
     - python3 -c "import mujoco_py"
-    - python3 -c "import spinup"
+    - python3 -c "import rlbase"
     - python3 -m pytest
