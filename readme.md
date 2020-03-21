@@ -1,32 +1,36 @@
-**Status:** Maintenance (expect bug fixes and minor updates)
+# RL Base
 
-Welcome to Spinning Up in Deep RL! 
-==================================
+This is a fork of [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/index.html), 
+an educational resource produced by OpenAI that makes it easier to learn about deep 
+reinforcement learning.
 
-This is an educational resource produced by OpenAI that makes it easier to learn about deep reinforcement learning (deep RL).
+This fork has all the PyTorch implementations from the original repo, plus additional algorithms.
+The new implementations are all following the [Spinning Up code format](https://spinningup.openai.com/en/latest/user/algorithms.html#code-format).
 
-For the unfamiliar: [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) (RL) is a machine learning approach for teaching agents how to solve tasks by trial and error. Deep RL refers to the combination of RL with [deep learning](http://ufldl.stanford.edu/tutorial/).
+## Algorithms
+The following algorithms have been implemented. 
 
-This module contains a variety of helpful resources, including:
+| Algorithm | Implementation | `box`              | `discrete`         | Multi Processing   |
+|-----------|----------------|--------------------|--------------------|--------------------|
+| REINFORCE |     RLBase     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| VPG       |   Spinning Up  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| PPO       |   Spinning Up  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| DDPG      |   Spinning Up  | :heavy_check_mark: |   :white_square:   |   :white_square:   |
+| TD3       |   Spinning Up  | :heavy_check_mark: |   :white_square:   |   :white_square:   |
+| SAC       |   Spinning Up  | :heavy_check_mark: |   :white_square:   |   :white_square:   |
 
-- a short [introduction](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html) to RL terminology, kinds of algorithms, and basic theory,
-- an [essay](https://spinningup.openai.com/en/latest/spinningup/spinningup.html) about how to grow into an RL research role,
-- a [curated list](https://spinningup.openai.com/en/latest/spinningup/keypapers.html) of important papers organized by topic,
-- a well-documented [code repo](https://github.com/openai/spinningup) of short, standalone implementations of key algorithms,
-- and a few [exercises](https://spinningup.openai.com/en/latest/spinningup/exercises.html) to serve as warm-ups.
+**Note:** This is a work in progress and more algorithms will be added over time.
 
-Get started at [spinningup.openai.com](https://spinningup.openai.com)!
-
-
-Citing Spinning Up
-------------------
-
-If you reference or use Spinning Up in your research, please cite:
-
+## Installation and Instructions
+* You can install the package using `pip`. This installs the package and all its dependencies.
 ```
-@article{SpinningUp2018,
-    author = {Achiam, Joshua},
-    title = {{Spinning Up in Deep Reinforcement Learning}},
-    year = {2018}
-}
+# From ~/rlbase
+pip install -e .
 ```
+* Follow the [Spinning Up instructions](https://spinningup.openai.com/en/latest/user/running.html) 
+for running the experiments. 
+
+## ToDos
+- [ ] Add CNN option for policies 
+- [ ] Add Tensorboard support
+ 
