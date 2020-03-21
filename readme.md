@@ -10,14 +10,14 @@ The new implementations are all following the [Spinning Up code format](https://
 ## Algorithms
 The following algorithms have been implemented. 
 
-| Algorithm | Implementation | `box`              | `discrete`         | Multi Processing   |
-|-----------|----------------|--------------------|--------------------|--------------------|
-| REINFORCE |     RLBase     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| VPG       |   Spinning Up  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| PPO       |   Spinning Up  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| DDPG      |   Spinning Up  | :heavy_check_mark: |   :white_square:   |   :white_square:   |
-| TD3       |   Spinning Up  | :heavy_check_mark: |   :white_square:   |   :white_square:   |
-| SAC       |   Spinning Up  | :heavy_check_mark: |   :white_square:   |   :white_square:   |
+| Algorithm | Implementation | `box`              | `discrete`            | Multi Processing      |
+|-----------|----------------|--------------------|-----------------------|-----------------------|
+| REINFORCE |     RLBase     | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
+| VPG       |   Spinning Up  | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
+| PPO       |   Spinning Up  | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
+| DDPG      |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
+| TD3       |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
+| SAC       |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
 
 **Note:** This is a work in progress and more algorithms will be added over time.
 
