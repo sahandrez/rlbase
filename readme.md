@@ -1,8 +1,7 @@
 # RL Base
 
-This is a fork of [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/index.html), 
-an educational resource produced by OpenAI that makes it easier to learn about deep 
-reinforcement learning.
+Clean PyTorch implementations of Reinforcement Learning algorithms forked from [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/index.html).
+This serves as a resource for understanding deep reinforcement learning algorithms. 
 
 This fork has all the PyTorch implementations from the original repo, plus additional algorithms.
 The new implementations are all following the [Spinning Up code format](https://spinningup.openai.com/en/latest/user/algorithms.html#code-format).
@@ -43,5 +42,6 @@ and [plotting the results](https://spinningup.openai.com/en/latest/user/plotting
 1. [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/abs/1801.01290)
 
 ## ToDos
+- [ ] Refactor the code to share components among algorithms of the same class
 - [ ] Add CNN option for policies 
 - [ ] Add Tensorboard support
