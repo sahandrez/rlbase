@@ -1,7 +1,7 @@
 # RL Base
 
 Clean PyTorch implementations of Reinforcement Learning algorithms forked from [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/index.html).
-This serves as a resource for understanding deep reinforcement learning algorithms. 
+This serves as a resource for understanding deep RL methods. 
 
 This fork has all the PyTorch implementations from the original repo, plus additional algorithms.
 The new implementations are all following the [Spinning Up code format](https://spinningup.openai.com/en/latest/user/algorithms.html#code-format).
@@ -11,13 +11,13 @@ The following algorithms have been implemented.
 
 | Algorithm | Implementation | `box`              | `discrete`            | Multi Processing      |
 |:----------|:--------------:|:------------------:|:---------------------:|:---------------------:|
-| REINFORCE [1] |     RLBase     | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
-| VPG [2, 3]    |   Spinning Up  | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
-| PPO [4]       |   Spinning Up  | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
-| DQN [5, 6]    |   RLBase       | :black_square_button: | :heavy_check_mark: | :black_square_button: |
-| DDPG [7]      |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
-| TD3 [8]       |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
-| SAC [9]       |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
+| REINFORCE [1]     |     RLBase     | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
+| VPG [2, 3]        |   Spinning Up  | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
+| PPO [4]           |   Spinning Up  | :heavy_check_mark: |   :heavy_check_mark:  |   :heavy_check_mark:  |
+| Double DQN [5, 6] |   RLBase       | :black_square_button: | :heavy_check_mark: | :black_square_button: |
+| DDPG [7]          |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
+| TD3 [8]           |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
+| SAC [9]           |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
 
 **Note:** This is a work in progress and more algorithms will be added over time.
 
@@ -40,6 +40,13 @@ and [plotting the results](https://spinningup.openai.com/en/latest/user/plotting
 1. [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
 1. [Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/abs/1802.09477)
 1. [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/abs/1801.01290)
+
+## Algorithms to be Added
+- [x] REINFORCE
+- [x] DQN and Double DQN 
+- [ ] Hindsight Experience Replay (HER)
+- [ ] Option-Critic
+- [ ] FeUdal Networks 
 
 ## ToDos
 - [ ] Refactor the code to share components among algorithms of the same class
