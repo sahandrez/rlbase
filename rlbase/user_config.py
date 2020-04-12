@@ -4,11 +4,15 @@ import os.path as osp
 # Default neural network backend for each algo
 # (Must be only 'pytorch')
 DEFAULT_BACKEND = {
+    'reinforce': 'pytorch',
     'vpg': 'pytorch',
     'ppo': 'pytorch',
+    'dqn': 'pytorch',
     'ddpg': 'pytorch',
     'td3': 'pytorch',
-    'sac': 'pytorch'
+    'sac': 'pytorch',
+    'her_dqn': 'pytorch',
+    'her_td3': 'pytorch'
 }
 
 # Where experiment outputs are saved by default:
@@ -23,4 +27,4 @@ DEFAULT_SHORTHAND = True
 
 # Tells the GridSearch how many seconds to pause for before launching 
 # experiments.
-WAIT_BEFORE_LAUNCH = 5
+WAIT_BEFORE_LAUNCH = 1

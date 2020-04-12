@@ -18,6 +18,7 @@ The following algorithms have been implemented.
 | DDPG [7]          |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
 | TD3 [8]           |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
 | SAC [9]           |   Spinning Up  | :heavy_check_mark: | :black_square_button: | :black_square_button: |
+| HER [10]          |   RLBase       | :heavy_check_mark: |   :heavy_check_mark:  | :black_square_button: |
 
 **Note:** This is a work in progress and more algorithms will be added over time.
 
@@ -40,11 +41,12 @@ and [plotting the results](https://spinningup.openai.com/en/latest/user/plotting
 1. [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
 1. [Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/abs/1802.09477)
 1. [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/abs/1801.01290)
+1. [Hindsight Experience Replay](https://arxiv.org/abs/1707.01495)
 
 ## Algorithms to be Added
 - [x] REINFORCE
 - [x] DQN and Double DQN 
-- [ ] Hindsight Experience Replay (HER)
+- [x] Hindsight Experience Replay (HER)
 - [ ] Option-Critic
 - [ ] FeUdal Networks 
 

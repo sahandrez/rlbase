@@ -7,6 +7,7 @@ from rlbase.algos.vpg.vpg import vpg as vpg
 from rlbase.algos.reinforce.reinforce import reinforce as reinforce
 from rlbase.algos.dqn.dqn import dqn as dqn
 from rlbase.algos.her.her_dqn import her_dqn as her_dqn
+from rlbase.algos.her.her_td3 import her_td3 as her_td3
 
 # Loggers
 from rlbase.utils.logx import Logger, EpochLogger

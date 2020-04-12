@@ -22,7 +22,7 @@ class BitFlip(GoalEnv):
     :param discrete_obs_space: (bool) Whether to use the discrete observation
         version or not, by default, it uses the MultiBinary one
     """
-    def __init__(self, n_bits=10, continuous=False, max_steps=None,
+    def __init__(self, n_bits=10, continuous=True, max_steps=None,
                  discrete_obs_space=False):
         super().__init__()
         # The achieved goal is determined by the current state
